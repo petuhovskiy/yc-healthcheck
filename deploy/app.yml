@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   app:
-    build: ./app
+    image: arthurwow/yc-healthcheck
     restart: always
     environment:
       MY_IP: ${MY_IP}
