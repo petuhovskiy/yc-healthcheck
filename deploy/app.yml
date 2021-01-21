@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  app:
+    build: ./app
+    restart: always
+    environment:
+      MY_IP: ${MY_IP}
+      POSTGRES_DSN: "host=${DB_HOST} port=5432 sslmode=disable user=postgres dbname=postgres password=${DB_PASSWORD}"
+    ports:
+      - 3000:3000
