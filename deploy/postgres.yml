@@ -4,6 +4,7 @@ services:
   db:
     image: postgres
     restart: always
+    network_mode: host
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:

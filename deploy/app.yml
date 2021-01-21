@@ -4,6 +4,7 @@ services:
   app:
     image: arthurwow/yc-healthcheck
     restart: always
+    network_mode: host
     environment:
       MY_IP: ${MY_IP}
       POSTGRES_DSN: "host=${DB_HOST} port=5432 sslmode=disable user=postgres dbname=postgres password=${DB_PASSWORD}"
