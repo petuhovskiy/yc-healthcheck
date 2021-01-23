@@ -33,7 +33,7 @@ do
 
         ((success_cnt++))
 
-        if [[ $success_cnt -ge 2 ]]; then
+        if [[ $success_cnt -ge 5 ]]; then
             exit 0
         fi
     fi
